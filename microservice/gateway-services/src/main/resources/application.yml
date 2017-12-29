@@ -1,0 +1,31 @@
+#server:  
+ # port: ${PORT:8080}
+
+#spring:
+# application:
+ #   name: api-gateway
+
+#zuul:
+ # routes:
+  #  auth:
+  #    path: /auth/**
+  #    sensitiveHeaders:
+  #    url: http://localhost:8000
+  #  memberservice:
+  #    path: /member/**
+  #    sensitiveHeaders:
+  #    url: http://localhost:2222
+ 
+ 
+      
+ # Discovery Server Access
+#eureka:
+ #   client:
+  #    serviceUrl:
+ #       defaultZone: ${EUREKA_URL:http://user:password@localhost:1111}/eureka/
+ 
+ logging:
+  level:
+     org:
+       springframework:
+         security: DEBUG
